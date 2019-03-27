@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --host oa.lpole.com --port 8081 ",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "ant-design-vue": "^1.3.7",
+    "axios": "^0.18.0",
+    "babel-plugin-import": "^1.11.0",
+    "moment": "^2.24.0",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
@@ -24,7 +28,7 @@
     "babel-jest": "^23.6.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "less": "^3.0.4",
+    "less": "^2.7.3",
     "less-loader": "^4.1.0",
     "vue-template-compiler": "^2.5.21"
   },
@@ -76,6 +80,6 @@
     "testMatch": [
       "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
     ],
-    "testURL": "http://localhost/"
+    "testURL": "http://oa.lpole.com:8081/"
   }
 }
