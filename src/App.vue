@@ -4,7 +4,7 @@
         <ul v-for="item in arr" :key="item.id">
             <li>{{item.applyUserName}}</li>
         </ul>
-        <router-view/>
+        <!--<router-view/>-->
     </div>
 </template>
 
